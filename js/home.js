@@ -42,3 +42,76 @@ galeriaImgs.forEach((img, index) => {
     });
 });
 
+(function () {
+  const dropdowns = document.querySelectorAll(".menu-principal .dropdown");
+
+  let bloqueoActivo = false;
+  function bloquear(e) { if (bloqueoActivo) e.preventDefault(); }
+  function keyHandler(e) {
+    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "];
+    if (bloqueoActivo && keys.includes(e.key)) e.preventDefault();
+  }
+
+  function activarBloqueo() {
+    if (bloqueoActivo) return;
+    bloqueoActivo = true;
+    window.addEventListener('wheel', bloquear, { passive: false });
+    window.addEventListener('touchmove', bloquear, { passive: false });
+    window.addEventListener('keydown', keyHandler, { passive: false });
+  }
+
+  function desactivarBloqueo() {
+    bloqueoActivo = false;
+    window.removeEventListener('wheel', bloquear);
+    window.removeEventListener('touchmove', bloquear);
+    window.removeEventListener('keydown', keyHandler);
+  }
+
+  function closeAll() {
+    dropdowns.forEach(d => {
+      d.classList.remove('open');
+      const mega = d.querySelector('.mega-menu');
+      const arrow = d.querySelector('.arrow');
+      if (mega) { mega.classList.remove('show'); mega.setAttribute('aria-hidden', 'true'); }
+      if (arrow) arrow.classList.remove('rotada');
+    });
+    desactivarBloqueo();
+  }
+
+  dropdowns.forEach(drop => {
+    const toggle = drop.querySelector('.toggle');
+    const mega = drop.querySelector('.mega-menu');
+    const arrow = drop.querySelector('.arrow');
+
+    if (mega) mega.addEventListener('click', e => e.stopPropagation());
+
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const isOpen = drop.classList.contains('open');
+      closeAll();
+
+      if (!isOpen) {
+        drop.classList.add('open');
+        if (mega) { mega.classList.add('show'); mega.setAttribute('aria-hidden', 'false'); }
+        if (arrow) arrow.classList.add('rotada');
+        activarBloqueo();
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    const nav = document.querySelector('.menu-principal');
+    if (nav && !nav.contains(e.target)) closeAll();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+})();
+
+
+
+
