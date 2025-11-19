@@ -42,8 +42,6 @@ galeriaImgs.forEach((img, index) => {
   });
 });
 
-
-
 const originalMenus = new Map();
 
 document.querySelectorAll(".mega-menu").forEach(menu => {
@@ -127,7 +125,7 @@ const navData = {
     headingRightColor: "#71c72d",
     images: ["img/minecraft-img-card1.jpg", "img/minecraft-img-card2.jpg", "img/minecraft-img-card3.jpg"],
     titles: ["Update 1", "Update 2", "Update 3"],
-    texts: ["Notas del parche 1", "Notas del parche 2", "Notas del parche 3"],
+    texts: ["Notas del parche 12", "Notas del parche 42", "Notas del parche 54"],
     rightTexts: ["Leer notas", "Versiones", "Desarrollo"]
   },
 
@@ -464,7 +462,6 @@ function abrirMegaMenu(drop) {
   megaAbierto = drop;
 }
 
-
 function irAMenuBusqueda() {
   cerrarCuenta();
   cerrarMenusNav();
@@ -503,7 +500,7 @@ megaSearch.addEventListener("click", e => e.stopPropagation());
 
 searchInput.addEventListener("focus", () => {
   searchBar.classList.add("focus");
-  searchLabel?.classList.add("focus");  
+  searchLabel?.classList.add("focus");
 });
 
 searchInput.addEventListener("blur", () => {
@@ -517,7 +514,7 @@ searchInput.addEventListener("input", () => {
   if (searchInput.value.trim()) {
     clearSearch.classList.add("visible");
     searchBar.classList.add("focus");
-    searchLabel?.classList.add("focus");    
+    searchLabel?.classList.add("focus");
   } else {
     clearSearch.classList.remove("visible");
   }

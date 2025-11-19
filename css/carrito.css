@@ -21,6 +21,15 @@ a {
     color: var(--accent)
 }
 
+.iniciar-sesion {
+    color: white;
+}
+
+.iniciar-sesion:hover {
+    color: #7ee000;
+}
+
+
 :root {
     --nav-h: 84px;
     --accent: #71c72d;
@@ -633,7 +642,7 @@ a {
     text-align: center;
     transition: bottom .45s ease;
     z-index: 999;
-    max-height: 63vh;
+    max-height: 43vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;

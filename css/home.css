@@ -23,6 +23,18 @@ a {
     color: var(--accent)
 }
 
+.consulta {
+    color: white;
+}
+
+.iniciar-sesion {
+    color: white;
+}
+
+.iniciar-sesion:hover {
+    color: #7ee000;
+}
+
 .site-navbar {
     position: fixed;
     top: 0;
