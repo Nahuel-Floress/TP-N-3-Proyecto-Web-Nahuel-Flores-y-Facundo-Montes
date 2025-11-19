@@ -628,13 +628,18 @@ a {
     right: 0;
     background: #1a1a1a;
     color: #fff;
-    padding: 35px 40px;
+    padding: 45px 40px;
     border-top: 3px solid #333;
     text-align: center;
     transition: bottom .45s ease;
     z-index: 999;
-    max-height: 80vh;
+    max-height: 63vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 #juego-detalle.visible {
     bottom: 0;
 }
@@ -656,62 +661,83 @@ a {
     margin-bottom: 15px;
 }
 
-#detalle-texto {
+
+#juego-detalle h3,
+#juego-detalle span {
+    width: 100%;
+    max-width: 1250px; 
     text-align: left;
-    margin: 0 auto;
-    max-width: 800px;
-    font-size: 1rem;
-    color: #9f9;
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
-#detalle-texto i {
-    font-size: 22px;
-    transform: rotate(-45deg);
-    color: #0f6;
+#juego-detalle h3 {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+#juego-detalle span {
+    margin-top: 15px;
+    color: #aaa;
 }
 
 .plataformas {
     margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    grid-template-columns: 260px repeat(4, 285px);
+    grid-template-rows: auto auto;
+    gap: 18px 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .plataformas button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
     background: #222;
     color: white;
-    padding: 16px;
-    border: 2px solid #444;
+    border: 3px solid #444;
     cursor: pointer;
     font-size: 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: .2s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.plataformas button:not(.btn-grande) {
+    height: 75px;
+}
+
+.plataformas button:first-child {
+    grid-row: 1 / 3;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
 }
 
 .plataformas button i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .plataformas button:hover {
-    background: #0a5;
-    border-color: #0f6;
+   background: #6b6562;
 }
 
 .plataformas button.activo {
-    background: #0a5 !important;
-    border-color: #0f6 !important;
-    transform: scale(1.04);
+    background: #3c8527;
+   box-shadow: inset 0 -6px 0 var(#2a641c), inset 0 6px 0 var(#52a535);
+    transform: scale(1.05);
+    border: none;
 }
 
+.plataformas button.activo :hover {
+    background: rgba(72,76,74);
+}
 
 .icons {
     display: flex;

@@ -1,57 +1,67 @@
 const iconMap = {
-    "PC": "bi bi-windows",
     "PC/MAC/LINUX": "bi bi-laptop",
-    "Mac": "bi bi-apple",
-    "Linux": "bi bi-terminal",
-    "PlayStation": "bi bi-playstation",
-    "Xbox": "bi bi-xbox",
-    "Nintendo": "bi bi-nintendo-switch",
+    "CHROMEBOOK": "bi bi-browser-chrome",
     "iOS": "bi bi-phone",
-    "Android": "bi bi-android2"
+    "Android": "bi bi-android2",
+    "Xbox": "bi bi-xbox",
+    "PlayStation": "bi bi-playstation",
+    "Nintendo": "bi bi-nintendo-switch",
+    "Amazon Fire": "bi bi-fire",
+    "PC": "bi bi-windows",
+    "Mac": "bi bi-apple",
+    "Linux": "bi bi-terminal"
 };
 
+const ordenPlataformas = [
+    "PC/MAC/LINUX",
+    "CHROMEBOOK",
+    "iOS",
+    "Android",
+    "PlayStation",
+    "Nintendo",
+    "Amazon Fire",
+    "Xbox"
+];
 
 const juegosData = {
     minecraft: {
-        titulo: "Minecraft",
         logo: "img/logo2.png",
         plataformas: [
             "PC/MAC/LINUX",
-            "PlayStation",
-            "Xbox",
-            "Nintendo",
+            "CHROMEBOOK",
             "iOS",
-            "Android"
+            "Android",
+            "PlayStation",
+            "Nintendo",
+            "Amazon Fire",
+            "Xbox"
         ]
     },
 
     dungeons: {
-        titulo: "Minecraft Dungeons",
         logo: "img/logo-dungeons.png",
         plataformas: [
-            "PC",
-            "PlayStation",
+            "PC/MAC/LINUX",
             "Xbox",
+            "PlayStation",
             "Nintendo"
         ]
     },
 
     legends: {
-        titulo: "Minecraft Legends",
         logo: "img/logo-legends.png",
         plataformas: [
-            "PC",
-            "PlayStation",
-            "Xbox"
+            "PC/MAC/LINUX",
+            "Xbox",
+            "PlayStation"
         ]
     },
 
     education: {
-        titulo: "Minecraft Education",
         logo: "img/logo-edu.png",
         plataformas: [
-            "PC",
-            "Mac",
+            "PC/MAC/LINUX",
+            "CHROMEBOOK",
             "iOS",
             "Android"
         ]
@@ -69,19 +79,22 @@ cards.forEach(card => {
         const data = juegosData[juegoID];
 
         document.getElementById("detalle-logo").src = data.logo;
-        document.getElementById("detalle-titulo").textContent = data.titulo;
 
         const plataformasDiv = document.getElementById("detalle-plataformas");
         plataformasDiv.innerHTML = "";
 
-        data.plataformas.forEach(plataforma => {
+        const plataformasOrdenadas = ordenPlataformas.filter(p =>
+            data.plataformas.includes(p)
+        );
+
+        plataformasOrdenadas.forEach(plataforma => {
             const btn = document.createElement("button");
 
             const icon = document.createElement("i");
             icon.className = iconMap[plataforma] || "bi bi-question-circle";
 
             btn.appendChild(icon);
-            btn.appendChild(document.createTextNode(plataforma));
+            btn.appendChild(document.createTextNode(" " + plataforma));
 
             plataformasDiv.appendChild(btn);
         });
