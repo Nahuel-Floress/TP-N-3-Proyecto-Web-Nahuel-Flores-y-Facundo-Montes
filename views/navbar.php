@@ -3,7 +3,7 @@
 <header class="navbar site-navbar">
     <div class="container-nav">
         <div class="logo">
-            <a href="home.html">
+            <a href="home.php">
                 <img src="img/logo2.png" alt="Minecraft logo">
             </a>
         </div>
