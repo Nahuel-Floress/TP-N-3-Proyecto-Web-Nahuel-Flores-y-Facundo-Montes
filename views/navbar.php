@@ -262,8 +262,8 @@
 
                     <nav class="hamburger-links">
                         <a href="#">Juegos</a>
-                        <a href="#">Tienda</a>
-                        <a href="#">Noticias</a>
+                        <a href="comprarAhora.php">Tienda</a>
+                        <a href="home.php">Noticias</a>
                         <a href="#">Soporte técnico</a>
                     </nav>
 

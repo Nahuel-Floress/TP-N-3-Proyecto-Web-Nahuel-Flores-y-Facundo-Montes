@@ -16,7 +16,7 @@
 
     <div class="hero">
         <h1>CREA. EXPLORA. SOBREVIVE.</h1>
-        <a href="#" class="btn-mc"><span>EXCAVA A MÁS PROFUNDIDAD</span></a>
+        <a href="#detalles" class="btn-mc"><span>EXCAVA A MÁS PROFUNDIDAD</span></a>
     </div>
 
 
@@ -40,9 +40,8 @@
 
             <div class="mc-plataformas-grid">
 
-                <!-- FILA 1 -->
                 <div class="mc-row">
-                    <!-- WINDOWS / MAC / LINUX (especial) -->
+              
                     <div class="mc-plat-item mc-special">
                         <i class="bi bi-display"></i>
 
@@ -67,7 +66,7 @@
                     </div>
                 </div>
 
-                <!-- FILA 2 -->
+           
                 <div class="mc-row">
                     <div class="mc-plat-item">
                         <i class="bi bi-xbox"></i>
@@ -88,7 +87,7 @@
                     </div>
                 </div>
 
-                <!-- FILA 3 -->
+            
                 <div class="mc-row">
                     <div class="mc-plat-item">
                         <i class="bi bi-playstation"></i>
@@ -243,7 +242,7 @@
 
     </section>
 
-
+ <section id="detalles">
     <section class="minecraft-section text-center text-white">
 
         <h1 class="minecraft-title">
@@ -307,7 +306,7 @@
         </div>
 
     </section>
-
+ </section>
 
 
 
