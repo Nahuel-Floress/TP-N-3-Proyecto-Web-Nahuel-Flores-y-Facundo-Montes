@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["idVideoJuego"])) {
     if (!isset($_SESSION["IDusuario"])) {
         echo "<script>
             alert('Debes iniciar sesión para comprar');
-            window.location.href='login.php';
+            window.location.href='views/login.php';
         </script>";
         exit;
     }

@@ -66,8 +66,8 @@ if ($stmt) {
     <div class="principal">
         <h1>Mi Biblioteca</h1>
         <div class="lib-nav">
-            <a href="home.php" class="nav-link"><i class="bi bi-arrow-left-circle"></i> Volver a tienda</a>
-            <a href="library.php" class="nav-link active"><i class="bi bi-collection"></i> Biblioteca</a>
+            <a href="home.php" class="nav-link">Volver a tienda</a>
+            <a href="library.php" class="nav-link active">Biblioteca</a>
         </div>
     </div>
 

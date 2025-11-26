@@ -283,3 +283,47 @@ body {
 .btn.delete.big:hover {
     background: #ff2f2f;
 }
+
+
+
+@media (max-width: 560px) {
+
+   
+    body {
+        margin-top: 68px;
+    }
+
+    .wrap {
+        width: calc(100% - 24px);
+        padding: 0 12px;
+    }
+
+    .game-thumb {
+        height: 140px;
+    }
+
+    .game-body {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .game-title {
+        font-size: 15px;
+    }
+
+    .btn.big {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .principal h1 {
+        font-size: 1.25rem;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
