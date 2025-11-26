@@ -53,8 +53,8 @@ const navData = {
     headingRightText: "Paquetes destacados",
     headingRightColor: "#71c72d",
     images: ["https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/realms/Global-Header_Image-Tile_Realms-Bedrock_570x321_01.png", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/marketplace/Global-Header_Image-Tile_Marketplace-Pass_321x321.jpg", "img/minecraft-img-card4.jpg"],
-    titles: ["Paquete 1", "Paquete 2", "Paquete 3"],
-    texts: ["Texto paquete 1", "Texto paquete 2", "Texto paquete 3"],
+    titles: ["Realms", "marketolace pass", "Education"],
+    texts: ["Juega con tus amigos en tu propio servidor personal.", "Mantén tu experiencia del juego con inventiva y diversión infinitas usando los packs de apariencias, texturas y mucho más.", "Education"],
     rightTexts: ["Ver paquetes", "Más info", "Comprar"]
   },
 
@@ -62,8 +62,8 @@ const navData = {
     headingRightText: "Comercializacion del Marketplace",
     headingRightColor: "#71c72d",
     images: ["https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/merch/MC_Slippers_Dot_Net_Tile_570x321.png", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/merch/Global-Header_Image-Tile_Merch-Kids_321x321.jpg", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/merch/Global-Header_Image-Tile_Merch-Plush_321x321.jpg"],
-    titles: ["Add-on 1", "Add-on 2", "Add-on 3"],
-    texts: ["Texto add-on 1", "Texto add-on 2", "Texto add-on 3"],
+    titles: ["Minecraft Gear oficial", "Ropa de Minecraft para niños", "Peluche de Minecraft"],
+    texts: ["Compra los productos oficiales de Minecraft más recientes para adultos.", "Te espera tu aventura: Prendas épicas de Minecraft para niños.", "Compra cubos acolchados y otros peluches de Minecraft."],
     rightTexts: ["Ver add-ons", "Instalar", "Más detalles"]
   },
 
@@ -79,18 +79,18 @@ const navData = {
   "Actualizaciones": {
     headingRightText: "Actualizaciones del juego",
     headingRightColor: "#71c72d",
-    images: ["img/minecraft-img-card1.jpg", "img/minecraft-img-card2.jpg", "img/minecraft-img-card3.jpg"],
-    titles: ["Update 1", "Update 2", "Update 3"],
-    texts: ["Notas del parche 1", "Notas del parche 2", "Notas del parche 3"],
+    images: ["https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_MinecraftExperience_570x321.png", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_StayUpdated_321x321.png", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_PlanYourVisit_321x321.png"],
+    titles: ["Experiencia de Minecraft", "Registrarse para recibir actualizaciones", "Planear la visita"],
+    texts: ["¡Sumérgete en la primerísima aventura inmersiva, interactiva y en primera persona!", "Obtén actualizaciones sobre entradas y futuros emplazamientos.", "Consulta las horas, los emplazamientos y los detalles."],
     rightTexts: ["Leer notas", "Versiones", "Desarrollo"]
   },
 
   "Eventos": {
     headingRightText: "Eventos especiales",
     headingRightColor: "#71c72d",
-    images: ["img/minecraft-img-card2.jpg", "img/minecraft-img-card3.jpg", "img/minecraft-img-card1.jpg"],
-    titles: ["Evento 1", "Evento 2", "Evento 3"],
-    texts: ["Texto evento 1", "Texto evento 2", "Texto evento 3"],
+    images: ["https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/MC-CreatorTools_Key-Art_Editor_570x321.jpg", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_%20Tips-For-Beginners%20_321x321_02.png", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/game-characters/Global-Header_Image-Tile_%20Feedback%20_321x321_02.png"],
+    titles: ["Herramientas para creadores", "Cómo jugar a Minecraft", "Cómo enviar tus comentarios"],
+    texts: ["Trabaja de forma más inteligente y crea más rápido con un potente conjunto de herramientas para creadores al alcance de tu mano.", "Consejos para empezar y subir de nivel.", "Ayuda a nuestro equipo a aprender lo que quieres ver en Minecraft."],
     rightTexts: ["Ver eventos", "Calendario", "Participar"]
   },
 
@@ -106,21 +106,13 @@ const navData = {
   "Instalación": {
     headingRightText: "Guías de instalación",
     headingRightColor: "#71c72d",
-    images: ["img/minecraft-img-card1.jpg", "img/minecraft-img-card3.jpg", "img/minecraft-img-card4.jpg"],
-    titles: ["Instalar 1", "Instalar 2", "Instalar 3"],
-    texts: ["Paso 1", "Paso 2", "Paso 3"],
+    images: ["https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_Launcher_570x321.jpg", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_Java-Edition-Server_321x321.jpg", "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Global-Header_Image-Tile_Bedrock-Edition-Server_321x321.jpg"],
+    titles: ["Descargar el Iniciador", "Descargar el servidor de Java Edition", "Descargar el servidor de Bedrock Edition"],
+    texts: ["Redescubre el mundo de Minecraft. Descarga el Iniciador hoy mismo y retoma donde lo dejaste.", "Ejecuta un servidor multijugador de Minecraft Java.", "Ejecuta un servidor dedicado de Bedrock para Minecraft."],
     rightTexts: ["Ver guía", "Descargar", "FAQ instalación"]
   },
 
-  "Compatibilidad": {
-    headingRightText: "Compatibilidad del sistema",
-    headingRightColor: "#71c72d",
-    images: ["img/minecraft-img-card2.jpg", "img/minecraft-img-card4.jpg", "img/minecraft-img-card1.jpg"],
-    titles: ["Compatibilidad 1", "Compatibilidad 2", "Compatibilidad 3"],
-    texts: ["Req. 1", "Req. 2", "Req. 3"],
-    rightTexts: ["Ver requisitos", "Plataformas", "Detalles"]
-  }
-
+ 
 };
 
 const estadoAplicado = new Map();

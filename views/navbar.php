@@ -162,7 +162,6 @@
                             <nav class="games-list">
                                 <a class="Preguntas frecuentes">Preguntas frecuentes</a>
                                 <a>Instalación</a>
-                                <a>Compatibilidad</a>
                             </nav>
                         </div>
 
