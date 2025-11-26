@@ -61,7 +61,7 @@
         </a>
 
 
-        <a href="minecraft-pg.html" class="link-pg">
+        <a href="minecraftlgpg.php" class="link-pg">
             <div class="card">
                 <img src="img/minecraft-img-card3.jpg" alt="Tarjeta3">
                 <h3>Minecraft Legends</h3>
