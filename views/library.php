@@ -56,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete"])) {
         <h1>Mi Biblioteca</h1>
 
         <div class="lib-nav">
-            <a href="home.php" class="nav-link"><i class="bi bi-arrow-left-circle"></i> Volver a tienda</a>
             <a href="library.php" class="nav-link active"><i class="bi bi-collection"></i> Biblioteca</a>
         </div>
     </div>
