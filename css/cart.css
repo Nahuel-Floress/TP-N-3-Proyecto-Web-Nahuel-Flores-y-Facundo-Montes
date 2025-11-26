@@ -1,0 +1,160 @@
+body {
+    background: #0b0b0b;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: 60px;
+}
+
+/* HERO EN TARJETA */
+.hero-card {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    height: fit-content;
+}
+
+.hero-img img {
+    width: 900px;
+    height: 680px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Contenedor general */
+.store-container {
+    display: flex;
+    gap: 50px;
+    padding: 40px 50px;
+}
+
+/* Caja derecha más ancha */
+.editions-box {
+    width: 600px;
+}
+
+.select-title {
+    font-size: 16px;
+    color: #6fdbb5;
+    margin-bottom: 10px;
+}
+
+/* TARJETAS */
+.edition-card {
+    background: #111;
+    border: 3px solid #222;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.edition-featured {
+    border-color: #00ffd0;
+}
+
+.edition-featured .best {
+    background: #00ffd0;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.items span {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    background: #1a1a1a;
+    padding: 5px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btn-buy {
+    background: #41c831;
+    border: 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background: #51e040;
+}
+
+/* PLATAFORMAS */
+.platforms {
+    padding: 40px;
+    background: #111;
+}
+
+.platform-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.plat {
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 40px;
+    background: #101010;
+}
+
+.faq-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+    color: #ccc;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-arrow {
+    transition: transform 0.25s ease;
+    font-size: 18px;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}

@@ -32,176 +32,287 @@
             <p class="mc-info">
                 Compra Minecraft: Java & Bedrock Edition* y obtén ambas versiones del juego por el precio de una.
                 Podrás cambiar fácilmente entre Java y Bedrock Edition gracias al <span class="mc-link">iniciador</span>
-                unificado y jugar entre
-                las versiones actuales de Minecraft, incluidos las consolas y los dispositivos móviles.
+                unificado y jugar entre las versiones actuales de Minecraft, incluidos las consolas y los dispositivos
+                móviles.
                 Más información sobre las distintas ediciones de <span class="mc-link">Minecraft</span>.
             </p>
             <p class="mc-info-small">* macOS y Linux son compatibles solo con Minecraft: Java Edition.</p>
 
             <div class="mc-plataformas-grid">
 
+                <!-- FILA 1 -->
                 <div class="mc-row">
-                    <div class="mc-plat-item mc-plat-main">
-                        <div class="mc-plat-content">
-                            <i class="bi bi-windows"></i>
-                            <span>WINDOWS/MAC/LINUX*</span>
-                        </div>
-                        <a class="mc-plat-btn" href="#">
-                            COMPRAR<br>AHORA
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
+                    <!-- WINDOWS / MAC / LINUX (especial) -->
+                    <div class="mc-plat-item mc-special">
+                        <i class="bi bi-display"></i>
+
+                        <span class="mc-plat-title">WINDOWS/MAC/LINUX*</span>
+
+                        <button class="mc-buy-btn">
+                            COMPRAR AHORA
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
                     </div>
+
                     <div class="mc-plat-item">
                         <i class="bi bi-nintendo-switch"></i>
-                        <span>NINTENDO</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span class="mc-plat-title">Nintendo</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
+
                     <div class="mc-plat-item">
-                        <i class="bi bi-google"></i>
-                        <span>CHROMEBOOK</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <i class="bi bi-browser-chrome"></i>
+                        <span class="mc-plat-title">Chromebook</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
                 </div>
 
+                <!-- FILA 2 -->
                 <div class="mc-row">
                     <div class="mc-plat-item">
                         <i class="bi bi-xbox"></i>
-                        <span>XBOX</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span class="mc-plat-title">Xbox</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
+
                     <div class="mc-plat-item">
-                        <i class="bi bi-fire"></i>
-                        <span>AMAZON FIRE</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <i class="bi bi-amazon"></i>
+                        <span class="mc-plat-title">Amazon Fire</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
+
                     <div class="mc-plat-item">
                         <i class="bi bi-apple"></i>
-                        <span>IOS</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span class="mc-plat-title">iOS</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
                 </div>
 
-                <div class="mc-row mc-row-last">
+                <!-- FILA 3 -->
+                <div class="mc-row">
                     <div class="mc-plat-item">
                         <i class="bi bi-playstation"></i>
-                        <span>PLAYSTATION</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span class="mc-plat-title">Playstation</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
+
                     <div class="mc-plat-item">
                         <i class="bi bi-android"></i>
-                        <span>ANDROID</span>
-                        <span class="mc-plat-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        <span class="mc-plat-title">Android</span>
+                        <i class="bi bi-arrow-right-short mc-mini-arrow"></i>
                     </div>
-                    <div class="mc-plat-item mc-plat-empty"></div>
+
+                    <div class="mc-plat-empty"></div>
                 </div>
+
             </div>
         </div>
 
         <div id="caracteristicas" class="mc-seccion">
-            <h3 class="mc-tabla-title">Compara las características clave de Minecraft Bedrock Edition y Java Edition.
+            <h3 class="mc-tabla-title">
+                Compara las características clave de Minecraft Bedrock Edition y Java Edition.
             </h3>
 
             <table class="mc-tabla">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th class="mc-th-vacio"></th>
                         <th>Java</th>
                         <th>Bedrock</th>
                     </tr>
                 </thead>
+
                 <tbody>
+
                     <tr>
-                        <td class="mc-caract-name">Compatibilidad entre plataformas</td>
-                        <td class="mc-caract-desc-java">Juego multiplataforma con Windows, Mac y Linux</td>
-                        <td class="mc-caract-desc-bedrock">Juego multiplataforma con Windows 10, Windows 11, Xbox,
-                            Nintendo Switch, PS5 y dispositivos móviles</td>
+                        <td class="mc-caract-name">
+                            Compatibilidad entre plataformas
+                            <span class="mc-info-icon">?</span>
+                        </td>
+                        <td class="mc-desc">Juego multiplataforma con Windows, Mac y Linux</td>
+                        <td class="mc-desc">Juego multiplataforma con Windows 10, Windows 11, Xbox, Nintendo Switch, PS5
+                            y móviles</td>
                     </tr>
+
                     <tr>
-                        <td class="mc-caract-name">Multijugador en pantalla dividida <span
-                                class="mc-sub-info">(Disponible únicamente en consolas)</span> <span
-                                class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td class="mc-caract-name">
+                            Multijugador en pantalla dividida
+                            <span class="mc-sub-info">(Disponible únicamente en consolas)</span>
+                            <span class="mc-info-icon">?</span>
+                        </td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
-                        <td class="mc-caract-name">Compatibilidad con función táctil/controlador <span
-                                class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td class="mc-caract-name">
+                            Compatibilidad con función táctil/controlador
+                            <span class="mc-info-icon">?</span>
+                        </td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Marketplace de Minecraft <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Marketplace Pass <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Contenido descargable (DLC) <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Mods <span class="mc-info-icon">?</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                     </tr>
+
                     <tr>
-                        <td class="mc-caract-name">Servidores multijugador destacados oficiales <span
-                                class="mc-sub-info">(al modo multijugador en línea requiere una suscripción que se vende
-                                por separado)</span> <span class="mc-info-icon">?</span></td>
+                        <td class="mc-caract-name">
+                            Servidores multijugador oficiales
+                            <span class="mc-sub-info">(requiere suscripción adicional)</span>
+                            <span class="mc-info-icon">?</span>
+                        </td>
                         <td><span class="mc-icon-yes">✔</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Realms <span class="mc-info-icon">?</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Realms Plus <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Hospedar tu propio servidor <span class="mc-info-icon">?</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Unirse a servidores hospedados por jugadores <span
                                 class="mc-info-icon">?</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Logros / Trofeos <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
                         <td class="mc-caract-name">Multijugador en LAN o WiFi <span class="mc-info-icon">?</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
-                        <td class="mc-caract-name">Control parental con Xbox Live o cuentas de Microsoft <span
-                                class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td class="mc-caract-name">Control parental <span class="mc-info-icon">?</span></td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                     <tr>
-                        <td class="mc-caract-name">Trazado de rayos <span class="mc-info-icon">?</span></td>
-                        <td><span class="mc-icon-no">❌</span></td>
+                        <td class="mc-caract-name">Trazado de rayos (Ray Tracing) <span class="mc-info-icon">?</span>
+                        </td>
+                        <td><span class="mc-icon-no">✖</span></td>
                         <td><span class="mc-icon-yes">✔</span></td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
+
     </section>
+
+
+    <section class="minecraft-section text-center text-white">
+
+        <h1 class="minecraft-title">
+            DESCUBRE EL MUNDO DE <br>
+            <span>MINECRAFT</span>
+        </h1>
+
+        <p class="description">
+            Crea todo que puedas imaginar, descubre misterios espeluznantes y sobrevive en la noche en el juego
+            de aventura tipo sandbox definitivo. Cada partida es distinta y te esperan aventuras inolvidables.
+        </p>
+
+        <div class="carousel-text-layout">
+            <div class="carousel-wrapper">
+
+                <div id="principalCarousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/minecraft-img-mini1.jfif" class="carousel-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/minecraft-img-mini2.avif" class="carousel-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/minecraft-img-mini3.jfif" class="carousel-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/minecraft-img-mini4.webp" class="carousel-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/minecraft-img-mini5.jfif" class="carousel-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrows-miniaturas-container">
+                    <button class="arrow-miniaturas-btn arrow-prev" type="button" aria-label="Anterior">
+                        <span class="btn-arrow arrow-left-miniatura"></span>
+                    </button>
+                    <button class="arrow-miniaturas-btn arrow-next" type="button" aria-label="Siguiente">
+                        <span class="btn-arrow arrow-right-miniatura"></span>
+                    </button>
+                </div>
+
+                <p class="subtitulo">
+                    Construye enormes asentamientos o una sencilla choza.<br>
+                    ¡El mundo está en tus manos para darle forma!
+                </p>
+
+            </div>
+        </div>
+
+        <div class="thumbs-container mt-4">
+            <div class="thumbs-track">
+                <img src="img/minecraft-img-mini1.jfif" class="thumb" data-index="0">
+                <img src="img/minecraft-img-mini2.avif" class="thumb" data-index="1">
+                <img src="img/minecraft-img-mini3.jfif" class="thumb" data-index="2">
+                <img src="img/minecraft-img-mini4.webp" class="thumb" data-index="3">
+                <img src="img/minecraft-img-mini5.jfif" class="thumb" data-index="4">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
 
 </body>
 

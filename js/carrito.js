@@ -10,6 +10,19 @@ const iconMap = {
   "Steam": "bi bi-steam"
 };
 
+// 🔗 NUEVO: Links por plataforma
+const plataformaLinks = {
+  "PC/MAC/LINUX": "cart.php",
+  "CHROMEBOOK": "chromebook.html",
+  "iOS": "ios.html",
+  "Android": "android.html",
+  "Xbox": "xbox.html",
+  "PlayStation": "playstation.html",
+  "Nintendo": "nintendo.html",
+  "Amazon Fire": "amazon.html",
+  "Steam": "steam.html"
+};
+
 const ordenPlataformas = [
   "PC/MAC/LINUX",
   "CHROMEBOOK",
@@ -168,6 +181,7 @@ function desbloquearScroll() {
   document.body.style.overflow = "";
 }
 
+// 🔥 ESTA ES LA PARTE MODIFICADA
 function renderPlataformas(plataformas) {
   plataformasDiv.innerHTML = "";
 
@@ -187,6 +201,14 @@ function renderPlataformas(plataformas) {
 
     btn.appendChild(icon);
     btn.appendChild(document.createTextNode(" " + textoFinal));
+
+    // 🔗 Redirección según plataforma
+    btn.onclick = () => {
+      const link = plataformaLinks[plataforma];
+      if (link) window.location.href = link;
+      else console.warn("No hay link asignado para:", plataforma);
+    };
+
     plataformasDiv.appendChild(btn);
   });
 

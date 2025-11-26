@@ -218,7 +218,7 @@
                 <div class="cuenta-dropdown" id="cuentaDropdown">
                     <ul>
                         <li><a href="../Proyecto-Final/views/login.php" class="iniciar-sesion">INICIAR SESIÓN</a></li>
-                        <li>CREAR CUENTA</li>
+                        <li><a href="../Proyecto-Final/views/register.php" class="iniciar-sesion">CREAR CUENTA</a></li>
                         <a href="perfilUsuario.php"><li>DESCARGAR</li></a>
                         <li>CANJEAR</li>
                     </ul>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VendeYa - Registro</title>
-    <link rel="shortcut icon" href="../img/IconoSinBorde.png" type="image/x-icon">
+    <title>Minecraft - Registro</title>
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/login.css">
 
     <style>

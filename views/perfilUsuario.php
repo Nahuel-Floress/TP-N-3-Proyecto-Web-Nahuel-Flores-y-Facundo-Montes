@@ -128,7 +128,7 @@
         const lbl = document.createElement("label");
         lbl.textContent = label;
         lbl.style.display = "block";
-        lbl.style.color = "#b18aff";
+        lbl.style.color = "#43e648ff";
         lbl.style.fontWeight = "bold";
         lbl.style.marginBottom = "6px";
 
@@ -153,14 +153,14 @@
     function crearBloqueDescripcion(texto) {
         const p = document.createElement("p");
         p.textContent = texto;
-        p.style.color = "#d1c4ff";
+        p.style.color = "#4bf94bff";
         p.style.fontSize = "15px";
         p.style.marginBottom = "20px";
         p.style.lineHeight = "1.6";
-        p.style.background = "rgba(126,92,242,0.1)";
+        p.style.background = "rgba(139, 242, 92, 0.1)";
         p.style.padding = "12px 16px";
         p.style.borderRadius = "10px";
-        p.style.border = "1px solid rgba(158,131,255,0.3)";
+        p.style.border = "1px solid rgba(131, 255, 150, 0.3)";
         return p;
     }
 
@@ -169,10 +169,10 @@
         label.style.display = "block";
         label.style.margin = "10px 0";
         label.style.color = "#fff";
-        label.style.background = "rgba(126,92,242,0.15)";
+        label.style.background = "rgba(94, 242, 92, 0.15)";
         label.style.padding = "10px 14px";
         label.style.borderRadius = "10px";
-        label.style.border = "1px solid rgba(158,131,255,0.25)";
+        label.style.border = "1px solid rgba(131, 255, 137, 0.25)";
         label.style.cursor = "pointer";
         label.style.transition = "0.2s";
 
@@ -181,8 +181,8 @@
         checkbox.style.marginRight = "10px";
         checkbox.addEventListener("change", () => {
             label.style.background = checkbox.checked
-                ? "rgba(158,131,255,0.35)"
-                : "rgba(126,92,242,0.15)";
+                ? "rgba(131, 255, 148, 0.35)"
+                : "rgba(122, 242, 92, 0.15)";
         });
 
         label.appendChild(checkbox);
@@ -193,7 +193,7 @@
     function cargarFormulario(tipo) {
         contenedorJuegos.innerHTML = "";
         const titulo = document.createElement("h2");
-        titulo.style.color = "#b18aff";
+        titulo.style.color = "#5eec36ff";
 
         animarTransicion(contenedorJuegos);
 
